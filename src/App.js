@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Doacao from './pages/Doacao';
-
 function App() {
     return (
         <Router>
