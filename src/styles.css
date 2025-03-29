@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary {
+    background-color: #38B6FF;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    border: 2px solid #38B6FF;
+    color: blue;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}

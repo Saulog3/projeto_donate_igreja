@@ -1,14 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Doacao from './pages/Doacao';
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import FormularioVaquinha from "./components/FormularioVaquinha";
+import Footer from "./components/Footer";
+import "./styles.css";
+
 function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/doacao" element={<Doacao />} />
-            </Routes>
-        </Router>
+        <div>
+            <Navbar />
+            <HeroSection />
+            <FormularioVaquinha />
+            <Footer />
+        </div>
     );
 }
+
 export default App;
