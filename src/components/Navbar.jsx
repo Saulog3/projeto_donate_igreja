@@ -1,9 +1,10 @@
 import "./Navbar.css";
+import logo from "../assets/logo2.png";
 
 function Navbar() {
     return (
         <nav className="navbar">
-            <div className="logo">Solidário</div>
+            <img src={logo} alt="Solidário" className="navbar-logo" />
             <ul className="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contato</a></li>

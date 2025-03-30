@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+ 
+    padding: 150px;
     background-color: #f4f4f4;
     gap: 20px; /* Espaço entre os elementos */
 }
@@ -20,6 +21,15 @@
     height: auto;
     border-radius: 10px;
 }
+h1 {
+    font-size: 3em; /* Tamanho da fonte do título */
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    font-weight: 900 ;
+    margin-bottom: 20px;
+    color: black; /* Cor do texto */
+    text-align: left;
+}
+
 
 .hero-text {
     width: 50%; /* Define a largura do texto */

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%; /* Ocupa metade da largura da página */
+    width: 400px; /* Ocupa metade da largura da página */
     height: 300px;
     position: relative;
     background: #f8f8f8;
@@ -28,7 +28,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: #007bff8c;
     color: white;
     border: none;
     padding: 10px;
