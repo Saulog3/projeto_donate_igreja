@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
     padding: 150px;
     background-color: #f4f4f4;
     gap: 20px; /* Espaço entre os elementos */
@@ -12,6 +11,10 @@
     display: flex;
     flex-direction: row; 
     align-items: center;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 50px;
 
 }
 
@@ -34,26 +37,33 @@ h1 {
 .hero-text {
     width: 50%; /* Define a largura do texto */
     padding: 20px;
+    text-align: justify;
+    justify-content: center;
+    
 }
 .hero-buttons {
     margin-top: 20px;
+    padding-left: 15%;;
 }
 
 .hero-buttons .primary,
 .hero-buttons .secondary {
     padding: 10px 20px;
-    margin-right: 10px;
+    margin-right: 40px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    height: 50px;
+    width: 200px; /* Largura dos botões */
+    font-weight: bolder;
 }
 
 .hero-buttons .primary {
-    background-color: #007bff;
+    background-color: #38b6ff;
     color: white;
 }
 
 .hero-buttons .secondary {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #38b6ff;
+    color: white;
 }

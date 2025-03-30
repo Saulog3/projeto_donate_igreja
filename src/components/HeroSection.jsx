@@ -26,6 +26,11 @@ function HeroSection() {
                         que exibe métricas detalhadas, como valores doados, datas e horários de cada transação, 
                         garantindo total controle sobre seu histórico de contribuições.
                     </p>
+                    <p>
+                        <strong>Conta Institucional</strong> – Gerencie suas doações de forma eficiente com um painel de análise financeira,
+                        que mostra os valores de entrada em tempo real. Além disso, um gráfico detalhado permite visualizar
+                        a evolução dos recebimentos, facilitando a gestão dos recursos.
+                    </p>
                     <p>Junte-se à <strong><em>Solidario+</em></strong> e transforme vidas com apenas alguns cliques.</p>
                     <div className="hero-buttons">
                         <button className="primary">Quero Doar</button>
