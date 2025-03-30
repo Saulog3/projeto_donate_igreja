@@ -1,11 +1,45 @@
 .carousel-container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Ocupa metade da largura da página */
+    height: 300px;
+    position: relative;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
 }

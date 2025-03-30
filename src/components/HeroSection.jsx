@@ -1,7 +1,15 @@
 import "./HeroSection.css";
 import banner from "../assets/banner.png";
+import Carousel from "./Carousel";
+
+
 
 function HeroSection() {
+    const images = [
+        "https://via.placeholder.com/800x400?text=Slide+1",
+        "https://via.placeholder.com/800x400?text=Slide+2",
+        "https://via.placeholder.com/800x400?text=Slide+3",
+      ];
     return (
         <section className="hero">
             <img className="Banner" src={banner} alt="Banner Solidário" />
@@ -17,6 +25,9 @@ function HeroSection() {
                         <button className="secondary">Criar Doação</button>
                     </div>
                 </div>
+            </div>
+            <div className="carousel-container">
+                <Carousel images={images} />
             </div>
         </section>
     );

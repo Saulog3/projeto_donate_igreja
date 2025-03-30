@@ -1,10 +1,6 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "../assets/Carousel.css"; // Arquivo CSS do carrossel
+import React, { useState } from "react";
+import "./Carousel.css";
 
-// Imagens do carrossel
 const images = [
   "/images/banner1.png",
   "/images/banner2.png",
@@ -12,25 +8,26 @@ const images = [
 ];
 
 const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000
+  const [current, setCurrent] = useState(0);
+  const length = images.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
   return (
     <div className="carousel-container">
-      <Slider {...settings}>
-        {images.map((src, index) => (
-          <div key={index}>
-            <img src={src} alt={`Slide ${index + 1}`} className="carousel-image" />
-          </div>
-        ))}
-      </Slider>
+      <button className="prev-btn" onClick={prevSlide}>&#10094;</button>
+
+      <div className="carousel-slide">
+        <img src={images[current]} alt="Slide" className="carousel-image" />
+      </div>
+
+      <button className="next-btn" onClick={nextSlide}>&#10095;</button>
     </div>
   );
 };
