@@ -12,6 +12,22 @@ button {
     font-size: 16px;
 }
 
+.container {
+    display: flex;      /* Coloca os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaçamento entre eles */
+    padding: 20px;
+    gap: 20px;          /* Espaço entre os elementos */
+}
+
+.hero-section {
+    width: 50%;  /* Ocupa metade da tela */
+}
+
+.carousel-container {
+    width: 50%;  /* Ocupa a outra metade da tela */
+}
+
 .primary {
     background-color: #38B6FF;
     color: white;
