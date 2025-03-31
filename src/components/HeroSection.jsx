@@ -11,7 +11,6 @@ function HeroSection() {
         <section className="hero">
             <div className="hero-content">
                 <img className="hero-image" src={banner} alt="Banner Solidário" />
-                {/* <img src="../assets/banner.png" alt="Banner Solidário" className="hero-image"/> */}
                 <div className="hero-text">
                     <h1>Para quem é</h1>
                     <p>
@@ -19,14 +18,14 @@ function HeroSection() {
                         Por isso, tanto doadores quanto instituições têm acesso a análises detalhadas
                          para acompanhar suas transações de forma clara e intuitiva.
                     </p>
-                    <p>
+                    <p className="textotab">
                         <strong>Conta Doadora</strong> – Além de fazer doações para instituições, 
                         você também pode criar uma vaquinha para causas específicas ou contribuir 
                         para campanhas já existentes. Acompanhe suas doações com um gráfico interativo, 
                         que exibe métricas detalhadas, como valores doados, datas e horários de cada transação, 
                         garantindo total controle sobre seu histórico de contribuições.
                     </p>
-                    <p>
+                    <p className="textotab">
                         <strong>Conta Institucional</strong> – Gerencie suas doações de forma eficiente com um painel de análise financeira,
                         que mostra os valores de entrada em tempo real. Além disso, um gráfico detalhado permite visualizar
                         a evolução dos recebimentos, facilitando a gestão dos recursos.

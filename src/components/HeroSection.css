@@ -12,7 +12,7 @@
     flex-direction: row; 
     align-items: center;
     display: flex;
-    width: 100vw;
+    width: 1200px;
     justify-content: space-around;
     margin-top: 50px;
 
@@ -23,6 +23,7 @@
     max-width: 500px;
     height: auto;
     border-radius: 10px;
+    height: 100vh;
 }
 h1 {
     font-size: 3em; /* Tamanho da fonte do título */
@@ -41,11 +42,22 @@ h1 {
     justify-content: center;
     
 }
+.textotab {
+    text-indent: 30px; /* Indentação do texto */
+}
 .hero-buttons {
     margin-top: 20px;
-    padding-left: 15%;;
+    padding-left: 15%;
+    padding-bottom: 25px;
 }
-
+.hero-buttons .primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+.hero-buttons .secondary:hover {
+    background-color: #007bff;
+    color: white;
+}
 .hero-buttons .primary,
 .hero-buttons .secondary {
     padding: 10px 20px;

@@ -1,0 +1,65 @@
+.donation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+}
+
+.info-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0099ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #007acc;
+}

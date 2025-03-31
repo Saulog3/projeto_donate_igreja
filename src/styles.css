@@ -12,6 +12,11 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
 .container {
     display: flex;      /* Coloca os elementos lado a lado */
     align-items: center; /* Alinha verticalmente */

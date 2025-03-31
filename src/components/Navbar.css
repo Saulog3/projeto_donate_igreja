@@ -33,7 +33,11 @@
 .nav-links a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: normal;
+}
+.nav-links li:hover a {
+    color: #38b6ff; /* Cor do texto ao passar o mouse */
+    text-decoration: underline;
 }
 
 .doar-btn {
