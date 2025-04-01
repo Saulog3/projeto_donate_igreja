@@ -188,6 +188,10 @@ padding: 8px;
 border: 1px solid #ccc;
 border-radius: 5px;
 }
+.valornecessario,.telefone,.cpf {
+    width: 100%;
+
+}
 
 .botao_criar {
 background-color: #0099ff;
