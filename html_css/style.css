@@ -143,28 +143,45 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
-    gap: 40px;
+    padding: 0px;
+    gap: 0px;
+    width: 1200px;
+    margin: auto;
+    
 }
 
-.info-section {
+.info-section1, .info-section2 {
 flex: 1;
-max-width: 50%;
+max-width: 75%;
 }
 
-.info-section h2 {
-font-size: 24px;
-margin-bottom: 10px;
-}
-
-.info-section p {
+.info-section1 p {
 font-size: 16px;
 margin: 5px 0;
+text-align: justify;
+font-weight: normal;
 }
+
+.info-section2 p {
+font-size: 16px;
+margin: 5px 0;
+text-align: justify;
+font-weight: normal;
+}
+
+
+.titulo_conta {
+font-size: 36px;
+font-weight: bolder;
+text-align: center;
+padding-bottom: 10px;
+}
+
 
 .form-section {
 flex: 1;
 max-width: 50%;
+padding: 0;
 }
 
 .form-group {
@@ -176,10 +193,11 @@ gap: 15px;
 table {
 width: 100%;
 border-collapse: collapse;
+
 }
 
 td {
-padding: 10px;
+padding: 5px;
 }
 
 input {

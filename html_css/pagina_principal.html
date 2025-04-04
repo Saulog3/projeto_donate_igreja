@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>    
 </head>
 <body>
     <header>
@@ -51,55 +51,116 @@
     </main>
     <section class="donation-container">
 
-        <div class="info-section">
-          <h2>Conta Doadora</h2>
-          <p><strong>Fazer doações:</strong> Você pode doar para instituições de caridade diretamente.</p>
-          <p><strong>Criar uma vaquinha:</strong> Possibilidade de iniciar uma campanha para uma causa específica.</p>
-          <p><strong>Contribuir para campanhas existentes:</strong> Apoiar arrecadações já em andamento.</p>
-          <p><strong>Acompanhar doações:</strong> Um gráfico interativo exibe métricas detalhadas.</p>
-          <p><strong>Detalhes disponíveis:</strong> Visualização de valores doados, datas e horários de cada transação.</p>
-          <p><strong>Controle total:</strong> Histórico de contribuições acessível para monitoramento.</p>
-  
-          <h2>Conta Institucional</h2>
-          <p><strong>Gerenciamento eficiente:</strong> Controle suas doações com um painel de análise financeira.</p>
-          <p><strong>Acompanhamento em tempo real:</strong> Visualize os valores de entrada instantaneamente.</p>
-          <p><strong>Gráfico detalhado:</strong> Monitore a evolução dos recebimentos ao longo do tempo.</p>
-          <p><strong>Facilidade na gestão:</strong> Ferramentas que auxiliam no controle dos recursos.</p>
-        </div>
- 
-        <div class="form-section">
-          <form>
-            <div class="form-group">
-                <table>
-
-                    <tr>
-                        <td><label for="valornecessario">De quanto você precisa?</label></td>
-                        <td><label for="cpf">Qual o seu CPF?</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" class="valornecessario" id="valornecessario" placeholder="0,00" /></td>
-                        <td><input type="text" class="cpf" id="cpf" placeholder="Insira seu CPF" /></td>
-                    </tr>
-                    <tr><td><label for="nome_vaquinha">Dê um nome para a sua vaquinha</label></td></tr>
-                    <tr><td colspan="2"><input type="text" class="nome_vaquinha" id="nome_vaquinha" placeholder="Ex: Ajude o Isaque" /></td></tr>
-                    <tr><td><label for="email">Qual o seu e-mail?</label></td></tr>
-                    <tr><td colspan="2"><input type="email" class="email" id="email" placeholder="Insira seu e-mail" /></td></tr>
-                    <tr><td><label for="nome_completo">Qual o seu nome completo?</label></td></tr>
-                    <tr><td colspan="2"><input type="text" class="nome_completo" id="nome_completo" placeholder="Insira seu nome completo" /></td></tr>
-                    <tr>
-                        <td><label for="telefone">Qual seu telefone?</label></td>
-                        <td><label for="cep">Qual o seu CEP?</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" class="telefone" id="telefone" placeholder="Insira seu telefone" /></td>
-                        <td><input type="text" class="cep" id="cep" placeholder="Insira seu CEP" /></td>
-                    </tr>
-                </table>
+        <div>
+            <div class="info-section1">
+                <h2 class="titulo_conta">Conta Doadora</h2>
+                <p class="mb-1 leading-tight"><strong>Fazer doações:</strong> Você pode doar para instituições de caridade diretamente.</p>
+                <p class="mb-1 leading-tight"><strong>Criar uma vaquinha:</strong> Possibilidade de iniciar uma campanha para uma causa específica.</p>
+                <p class="mb-1 leading-tight"><strong>Contribuir para campanhas existentes:</strong> Apoiar arrecadações já em andamento.</p>
+                <p class="mb-1 leading-tight"><strong>Acompanhar doações:</strong> Um gráfico interativo exibe métricas detalhadas.</p>
+                <p class="mb-1 leading-tight"><strong>Detalhes disponíveis:</strong> Visualização de valores doados, datas e horários de cada transação.</p>
+                <p class="mb-1 leading-tight"><strong>Controle total:</strong> Histórico de contribuições acessível para monitoramento.</p>
             </div>
-  
-            <button class="botao_criar" type="submit">Criar vaquinha</button>
-          </form>
+        
+            <div class="info-section2">
+                <h2 class="titulo_conta">Conta Institucional</h2>
+                <p class="mb-1 leading-tight"><strong>Gerenciamento eficiente:</strong> Controle suas doações com um painel de análise financeira.</p>
+                <p class="mb-1 leading-tight"><strong>Acompanhamento em tempo real:</strong> Visualize os valores de entrada instantaneamente.</p>
+                <p class="mb-1 leading-tight"><strong>Gráfico detalhado:</strong> Monitore a evolução dos recebimentos ao longo do tempo.</p>
+                <p class="mb-1 leading-tight"><strong>Facilidade na gestão:</strong> Ferramentas que auxiliam no controle dos recursos.</p>
+            </div>
         </div>
+       
+        <div class="form-section bg-white p-6 rounded-lg max-w-xl mx-auto">
+            <form>
+              <div class="form-group">
+                <table class="w-full">
+                  <tr>
+                    <td class="pr-2">
+                      <label for="valornecessario" class="block font-medium text-gray-700">De quanto você precisa?</label>
+                    </td>
+                    <td class="pl-2">
+                      <label for="cpf" class="block font-medium text-gray-700">Qual o seu CPF?</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-2">
+                      <input type="text" 
+                      class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="valornecessario" placeholder="0,00" />
+                    </td>
+                    <td class="pl-2">
+                      <input type="text" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="cpf" placeholder="Insira seu CPF" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <label for="nome_vaquinha" class="block mt-3 font-medium text-gray-700">Dê um nome para a sua vaquinha</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="text" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="nome_vaquinha" placeholder="Ex: Ajude o Isaque" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <label for="email" class="block mt-3 font-medium text-gray-700">Qual o seu e-mail?</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="email" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="email" placeholder="Insira seu e-mail" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <label for="nome_completo" class="block mt-3 font-medium text-gray-700">Qual o seu nome completo?</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="text" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="nome_completo" placeholder="Insira seu nome completo" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-2">
+                      <label for="telefone" class="block mt-3 font-medium text-gray-700">Qual seu telefone?</label>
+                    </td>
+                    <td class="pl-2">
+                      <label for="cep" class="block mt-3 font-medium text-gray-700">Qual o seu CEP?</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-2">
+                      <input type="text" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="telefone" placeholder="Insira seu telefone" />
+                    </td>
+                    <td class="pl-2">
+                      <input type="text" class="w-full border-2 border-gray-300 rounded-md p-2 
+                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none 
+                      transition-all duration-200" id="cep" placeholder="Insira seu CEP" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          
+              <button class="w-full mt-4 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition">
+                Criar vaquinha
+              </button>
+            </form>
+          </div>
+        
       </section>
 </body>
 </html>
