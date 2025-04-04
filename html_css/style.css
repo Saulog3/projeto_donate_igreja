@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -62,9 +65,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px;
+    padding: 0px;
     background-color: #fff;
-    gap: 20px; /* Espaço entre os elementos */
+    
+  
 }
 
 .hero-content {
@@ -72,10 +76,12 @@ body {
     flex-direction: row; 
     align-items: center;
     display: flex;
-    width: 1200px;
+    gap: 80px;
     justify-content: space-around;
-    margin-top: 50px;
-
+    margin-top: 90px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    line-height: 18px;
 }
 
 .hero-image {
@@ -83,12 +89,12 @@ body {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
-    height: 100vh;
+    height: 100; /* Altura da imagem */
 }
-h1 {
-    font-size: 3em; /* Tamanho da fonte do título */
-    font-family: 'Arial', sans-serif; /* Fonte do título */
-    font-weight: 900 ;
+.primeiro-titulo {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    font-family: 'Inter', sans-serif; /* Fonte do título */
+    font-weight: 800 ;
     margin-bottom: 20px;
     color: black; /* Cor do texto */
     text-align: left;
@@ -96,19 +102,22 @@ h1 {
 
 
 .hero-text {
-    width: 50%; /* Define a largura do texto */
+    width: 650px; /* Define a largura do texto */
     padding: 20px;
     text-align: justify;
     justify-content: center;
+    font-family: 'Inter', sans-serif; /* Fonte do título */
     
 }
 .textotab {
     text-indent: 30px; /* Indentação do texto */
 }
+
 .hero-buttons {
     margin-top: 20px;
     padding-left: 15%;
     padding-bottom: 25px;
+    
 }
 .hero-buttons .primary:hover {
     background-color: #007bff;
@@ -128,6 +137,7 @@ h1 {
     height: 50px;
     width: 150px; /* Largura dos botões */
     font-weight: bolder;
+    font-family: 'Inter', sans-serif; /* Fonte do título */
 }
 
 .hero-buttons .primary {
@@ -147,12 +157,14 @@ h1 {
     gap: 0px;
     width: 1200px;
     margin: auto;
+    padding-top: 150px;
     
 }
 
 .info-section1, .info-section2 {
 flex: 1;
 max-width: 75%;
+
 }
 
 .info-section1 p {
@@ -160,6 +172,8 @@ font-size: 16px;
 margin: 5px 0;
 text-align: justify;
 font-weight: normal;
+font-family: 'Inter', sans-serif; /* Fonte do texto */
+line-height: 18px;
 }
 
 .info-section2 p {
@@ -167,6 +181,7 @@ font-size: 16px;
 margin: 5px 0;
 text-align: justify;
 font-weight: normal;
+font-family: 'Inter', sans-serif; /* Fonte do título */
 }
 
 
@@ -175,6 +190,7 @@ font-size: 36px;
 font-weight: bolder;
 text-align: center;
 padding-bottom: 10px;
+font-family: 'Inter', sans-serif; /* Fonte do título */
 }
 
 
@@ -198,12 +214,20 @@ border-collapse: collapse;
 
 td {
 padding: 5px;
+font-family: 'Inter', sans-serif; /* Fonte do título */
+font-weight: 500;
+}
+
+
+label {
+    font-family: 'Inter', sans-serif; /* Fonte do título */
+    font-weight: 500;
 }
 
 input {
 width: 100%;
 padding: 8px;
-border: 1px solid #ccc;
+border: 1px solid #030303;
 border-radius: 5px;
 }
 .valornecessario,.telefone,.cpf {
