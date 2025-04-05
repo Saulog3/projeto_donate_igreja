@@ -7,8 +7,8 @@
   #container {
     height: 300px;
     width: 300px;#galleryView {
-    height: 30vh;
-    width: 40vw;
+    height: 300px;
+    width: 620px;
     background: none; /* Remove o fundo */
     display: flex;
     justify-content: center;
@@ -28,12 +28,12 @@
   }
   
   #mainView {
-    height: 200px; /* Reduz a altura */
+    height: 250px; /* Reduz a altura */
     width: 250px; /* Reduz a largura */
   }
   
   #leftView, #rightView {
-    height: 200px; /* Reduz a altura */
+    height: 250px; /* Reduz a altura */
     width: 200px; /* Reduz a largura */
   }.navBtns {
     width: 50px; /* Reduz a largura */
@@ -55,8 +55,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 95vw;
+    width: 100px;
     position: absolute;
+    
   }
   
   #tilesContainer {
@@ -140,7 +141,7 @@
   #slider3 {
     height: 36px;
     width: 46px;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0);
     border-radius: 3px;  
     transition: all 0.5s;
   }
