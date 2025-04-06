@@ -20,8 +20,8 @@
 
     <!-- Menu -->
     <nav class="hidden md:flex items-center space-x-6">
-      <a href="#" class="text-gray-800 hover:text-cyan-500">Como Funciona</a>
-      <a href="#" class="text-gray-800 hover:text-cyan-500">Contato</a>
+      <a href="#conta_doadora" class="text-gray-800 hover:text-cyan-500">Como Funciona</a>
+      <a href="#contato" class="text-gray-800 hover:text-cyan-500">Contato</a>
       <a href="#" class="text-gray-800 hover:text-cyan-500">Descubra</a>
  
     </nav>
@@ -63,8 +63,8 @@
                 </p>
                 <p>Junte-se à <strong><em>Solidario+</em></strong> e transforme vidas com apenas alguns cliques.</p>
                 <div class="hero-buttons">
-                    <button class="primary">Quero Doar</button>
-                    <button class="secondary">Criar Doação</button>
+                    <button class="primary" onclick="window.location.href='pagina_conta_doadora.html'">Quero Doar</button>
+                    <button class="secondary" onclick="window.location.href='pagina_conta_institucional.html'">Criar Doação</button>
                 </div>
                 <div id="container"> 
                   <div id="toggleContainer">
@@ -94,7 +94,7 @@
             </div>
         </div>
     </main>
-    <section class="donation-container">
+    <section class="donation-container" id="conta_doadora">
 
         <div>
             <div class="info-section1">
@@ -218,7 +218,7 @@
           <a href="#">
             <p>Entre em contato</p>
           </a>
-          <p>solicidariomaisadministracao@solidario.com.br</p>
+          <p id="contato">solicidariomaisadministracao@solidario.com.br</p>
           <p>(11) 99999-9999</p>
         </div>
         <p>© 2025 - Todos os direitos reservados</p>
