@@ -6,21 +6,37 @@
     <title>Página Principal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrossel.css">
-    
     <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="shortcut icon" href="image/favicon_proj.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="image/logo1.png"alt="Solidário" class="navbar-logo" />
-            <ul class="nav-links">
-                <li><a href="#">Como Funciona</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Descubra</a></li>
-            </ul>
-            <button class="doar-btn">Quero Doar</button>
-        </nav>
-    </header>
+<header class="w-full fixed top-0 bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="image/logo1.png" alt="Logo" class="w-30 h-12" />
+    </div>
+
+    <!-- Menu -->
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="#" class="text-gray-800 hover:text-cyan-500">Como Funciona</a>
+      <a href="#" class="text-gray-800 hover:text-cyan-500">Contato</a>
+      <a href="#" class="text-gray-800 hover:text-cyan-500">Descubra</a>
+ 
+    </nav>
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="#" class="text-sky-500 hover:text-blue-600 flex items-center gap-1">
+        Buscar <img src="image/ph_magnifying-glass-bold.png"><i class="fas fa-search text-cyan-400"></i>
+      </a>
+      <a href="#" class="text-sky-500 hover:text-blue-600">Minha Conta</a>
+      <!-- Botão -->
+      <button class="bg-sky-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Quero Doar</button>
+    </nav>
+   
+  </div>
+</header>
+
     <main class="hero">
         <div class="hero-content">
             <img class="hero-image" src="image/img-banner.png" alt="Banner Solidário" />
@@ -199,7 +215,9 @@
       </section>
       <footer class="footer">
         <div class="footer-linha1">
-          <p>Entre em contato</p>
+          <a href="#">
+            <p>Entre em contato</p>
+          </a>
           <p>solicidariomaisadministracao@solidario.com.br</p>
           <p>(11) 99999-9999</p>
         </div>
