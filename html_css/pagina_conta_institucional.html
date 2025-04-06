@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Conta Institucional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="shortcut icon" href="image/favicon_proj.png" type="image/x-icon">
+    <style>
+        main {
+                width: 789px;
+                height: 643px;
+                margin: auto;
+                margin-bottom: 70px;
+            }
+        #titulo-pg {
+            font-family: 'Inter';
+    }
+    </style>
+</head>
+<body>
+        <header class="w-full h-24 bg-white  z-50">
+            <a href="pagina_principal.html" 
+            class="mt-20 ml-40 w-10 h-10 bg-sky-500 text-white rounded-full hover:bg-blue-600 flex items-center justify-center">
+           &lsaquo;
+         </a>
+        </header>
+        
+        <main>
+            <section class="w-full h-32 bg-white flex items-center justify-center">
+                <h1 id="titulo-pg" class="text-3x md:text-3xl font-[800] text-center mt-10">
+                    Criando a sua <span class="text-sky-500 font-[800]">CONTA INSTITUCIONAL</span>
+                </h1>
+            </section>
+            <div class="form-section bg-white p-6 rounded-lg max-w-xl mx-auto">
+                <form>
+                  <div class="form-group">
+                    <table class="w-full">
+                      <tr>
+                        <td class="pr-2">
+                          <label for="cnpj" class="block font-bold text-black-700">Qual o CNPJ?</label>
+                        </td>
+                        <td class="pl-2">
+                          <label for="telefone" class="block font-bold text-black-700">Qual o telefone?</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pr-2">
+                          <input type="text"
+                          class="w-full border-2 border-black-300 rounded-md p-2
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none
+                          transition-all duration-200" id="cnpj" placeholder="Insira o CNPJ" />
+                        </td>
+                        <td class="pl-2">
+                          <input type="text" class="w-full border-2 border-black-300 rounded-md p-2
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none
+                          transition-all duration-200" id="telefone" placeholder="Insira seu telefone" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <label for="nome" class="block mt-2 font-bold text-black-700">Qual o nome da Instituição?</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <input type="text" class="w-full border-2 border-black-300 rounded-md p-2
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none
+                          transition-all duration-200" id="nome" placeholder="Insira o nome da Instituição" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <label for="email" class="block mt-2 font-bold text-black-700">Qual o e-mail da Instituição?</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <input type="email" class="w-full border-2 border-black-300 rounded-md p-2
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none
+                          transition-all duration-200" id="email" placeholder="Insira o e-mail" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <label for="CEP" class="block mt-2 font-bold text-black-700">Qual o CEP?</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <input type="text" class="w-full border-2 border-black-300 rounded-md p-2
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none
+                          transition-all duration-200" id="CEP" placeholder="Insira seu CEP" />
+                        </td>
+                        </tr>
+                    </table>
+                  </div>
+            
+                  <button class="w-full mt-5 bg-sky-500 text-white text-[32px] font-bold p-1 rounded-md hover:bg-blue-600 transition">
+                    Criar Conta
+                  </button>
+                </form>
+            </div>
+        </main>
+        
+
+    <footer class="footer">
+        <div class="footer-linha1">
+          <a href="#">
+            <p>Entre em contato</p>
+          </a>
+          <p>solicidariomaisadministracao@solidario.com.br</p>
+          <p>(11) 99999-9999</p>
+        </div>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

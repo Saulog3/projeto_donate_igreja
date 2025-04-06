@@ -10,13 +10,11 @@ body {
 }
 
 
-
 .navbar-logo {
     position: absolute;
     left: 45px; /* Posiciona o logotipo à esquerda */
     top: 25px; /* Ajuste a posição vertical conforme necessário */
     height: 50px;
-    
 }
 
 .nav-links {
@@ -51,7 +49,6 @@ body {
     position: absolute;
     right: 0px;
     top: 30px;
-    
 }
 .doar-btn {
      /* Remove o botão do fluxo normal */
@@ -69,10 +66,7 @@ body {
     align-items: center;
     padding: 0px;
     background-color: #fff;
-    
-  
 }
-
 .hero-content {
     display: flex;
     flex-direction: row; 
@@ -85,7 +79,6 @@ body {
     font-family: 'Arial', sans-serif; /* Fonte do texto */
     line-height: 18px;
 }
-
 .hero-image {
     width: 50%; /* Define a largura da imagem */
     max-width: 500px;
@@ -101,21 +94,17 @@ body {
     color: black; /* Cor do texto */
     text-align: left;
 }
-
-
 .hero-text {
     width: 650px; /* Define a largura do texto */
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: justify;
     justify-content: center;
-    font-family: 'Inter', sans-serif; /* Fonte do título */
-    
+    font-family: 'Inter', sans-serif; /* Fonte do título */    
 }
 .textotab {
     text-indent: 30px; /* Indentação do texto */
 }
-
 .hero-buttons {
     margin-top: 20px;
     padding-left: 13vh;
@@ -143,7 +132,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
-
 .hero-buttons .primary {
     background-color: #38b6ff;
     color: white;
@@ -162,16 +150,12 @@ body {
     width: 1200px;
     margin: auto;
     padding-top: 300px;
-    padding-bottom: 100px;
-    
+    padding-bottom: 100px;   
 }
-
 .info-section1, .info-section2 {
 flex: 1;
 max-width: 75%;
-
 }
-
 .info-section1 p {
 font-size: 16px;
 margin: 5px 0;
@@ -180,7 +164,6 @@ font-weight: normal;
 font-family: 'Inter', sans-serif; /* Fonte do texto */
 line-height: 18px;
 }
-
 .info-section2 p {
 font-size: 16px;
 margin: 5px 0;
@@ -188,8 +171,6 @@ text-align: justify;
 font-weight: normal;
 font-family: 'Inter', sans-serif; /* Fonte do título */
 }
-
-
 .titulo_conta {
 font-size: 36px;
 font-weight: bolder;
@@ -197,38 +178,29 @@ text-align: center;
 padding-bottom: 10px;
 font-family: 'Inter', sans-serif; /* Fonte do título */
 }
-
-
 .form-section {
 flex: 1;
 max-width: 50%;
 padding: 0;
 }
-
 .form-group {
 display: flex;
 flex-direction: column;
 gap: 15px;
 }
-
 table {
 width: 100%;
 border-collapse: collapse;
-
 }
-
 td {
 padding: 5px;
 font-family: 'Inter', sans-serif; /* Fonte do título */
 font-weight: 500;
 }
-
-
 label {
     font-family: 'Inter', sans-serif; /* Fonte do título */
     font-weight: 500;
 }
-
 input {
 width: 100%;
 padding: 8px;
@@ -237,9 +209,7 @@ border-radius: 5px;
 }
 .valornecessario,.telefone,.cpf {
     width: 100%;
-
 }
-
 .botao_criar {
 background-color: #0099ff;
 color: white;
@@ -251,11 +221,9 @@ cursor: pointer;
 margin-top: 10px;
 width: 100%;
 }
-
 .botao_criar:hover {
 background-color: #007acc;
 }
-
 .footer {
     text-align: center;
     padding: 10px;
@@ -270,6 +238,6 @@ background-color: #007acc;
 .footer-linha1 {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;  
 }
+
